@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+
 	flag.Parse()
 	args := flag.Args()
 

@@ -10,16 +10,7 @@ PS go-thumbnail-picture> go mod init hosomi/go-thumbnail-picture
 go: creating new go.mod: module hosomi/go-thumbnail-picture
 ```
 
-## run setup:
-
-```powershell
-PS go-thumbnail-picture> go build
-go: finding module for package golang.org/x/image/draw
-go: downloading golang.org/x/image v0.0.0-20200927104501-e162460cd6b5
-go: found golang.org/x/image/draw in golang.org/x/image v0.0.0-20200927104501-e162460cd6b5
-```
-
-## go run halfsize.go
+## go run cmd/halfsize.go
 
 Halve the original image and output it.  
 
@@ -28,8 +19,27 @@ args:
 * [1] ... Output Image File Name.
 
 ```powershell
-PS go-thumbnail-picture> go run halfsize.go material/cat0056-051.jpg out.jpg
+PS go-thumbnail-picture> go run cmd/halfsize.go material/cat0056-051.jpg out.jpg
 ```
+
+## go run cmd/superposition.go
+
+Superposition two images.  
+
+```powershell
+PS go-thumbnail-picture> go run cmd/superposition.go
+```
+
+lower image(100x100):  
+![lower image](material/100x100.jpg)  
+
+upper image(50x50):  
+![upper image](material/50x50.jpg)  
+
+output image(Starting position 25,25):  
+![output image](material/superposition.jpg)  
+
+
 
 ## Thanks.
 
