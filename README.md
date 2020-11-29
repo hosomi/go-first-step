@@ -46,6 +46,7 @@ output image(Starting position 25,25):
 ## go run cmd/azuresdk_blobupload.go
 
 Upload the files to Azure Storage Blob.  
+(Uploading files to Azure Blob with Azure SDK for Go)    
 
 args:  
 * [0] ... Upload File Name.
