@@ -22,6 +22,8 @@ args:
 PS go-thumbnail-picture> go run cmd/halfsize.go material/cat0056-051.jpg out.jpg
 ```
 
+---
+
 ## go run cmd/superposition.go
 
 Superposition two images.  
@@ -39,7 +41,36 @@ upper image(50x50):
 output image(Starting position 25,25):  
 ![output image](material/superposition.jpg)  
 
+---
 
+## go run cmd/azuresdk_blobupload.go
+
+Upload the files to Azure Storage Blob.  
+
+args:  
+* [0] ... Upload File Name.
+
+``The container name must be created in go-test before it is run.``
+
+```powershell
+PS go-thumbnail-picture> go run .\cmd\azuresdk_blobupload.go .\material\cat0056-051.jpg
+```
+
+setup:  
+* Windows (Azure Storage Emulator settings)
+:link: [接続文字列を構成する - Azure Storage | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-configure-connection-string)
+
+```powershell
+setx AZURE_STORAGE_ACCOUNT "devstoreaccount1"
+setx AZURE_STORAGE_ACCESS_KEY "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
+```
+
+:link: [Azure/azure-storage-blob-go: Microsoft Azure Blob Storage Library for Go](https://github.com/Azure/azure-storage-blob-go)  
+:link: [Go 開発者向けの Azure | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/developer/go/)  
+:link: [Azure クイック スタート - Go を使用してオブジェクト ストレージに BLOB を作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-go)  
+:link: [setx | Microsoft Docs](https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/setx)  
+
+---
 
 ## Thanks.
 
