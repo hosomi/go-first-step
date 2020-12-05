@@ -1,4 +1,4 @@
-# Go Thumbnail Picture
+# Go First Step
 
 * go version go1.15.2 windows/amd64
 * [draw - GoDoc](https://godoc.org/golang.org/x/image/draw)  
