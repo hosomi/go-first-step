@@ -6,8 +6,8 @@
 ## initial setup:  
 
 ```powershell
-PS go-thumbnail-picture> go mod init hosomi/go-thumbnail-picture
-go: creating new go.mod: module hosomi/go-thumbnail-picture
+PS go-first-step> go mod init hosomi/go-first-step
+go: creating new go.mod: module hosomi/go-first-step
 ```
 
 ## go run cmd/halfsize.go
@@ -19,7 +19,7 @@ args:
 * [1] ... Output Image File Name.
 
 ```powershell
-PS go-thumbnail-picture> go run cmd/halfsize.go material/cat0056-051.jpg out.jpg
+PS go-first-step> go run cmd/halfsize.go material/cat0056-051.jpg out.jpg
 ```
 
 ---
@@ -29,7 +29,7 @@ PS go-thumbnail-picture> go run cmd/halfsize.go material/cat0056-051.jpg out.jpg
 Superposition two images.  
 
 ```powershell
-PS go-thumbnail-picture> go run cmd/superposition.go
+PS go-first-step> go run cmd/superposition.go
 ```
 
 lower image(100x100):  
@@ -54,7 +54,7 @@ args:
 ``The container name must be created in go-test before it is run.``
 
 ```powershell
-PS go-thumbnail-picture> go run .\cmd\azuresdk_blobupload.go .\material\cat0056-051.jpg
+PS go-first-step> go run .\cmd\azuresdk_blobupload.go .\material\cat0056-051.jpg
 ```
 
 setup:  
