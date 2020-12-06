@@ -3,6 +3,7 @@ module hosomi/go-thumbnail-picture
 go 1.15
 
 require (
+	github.com/Azure/azure-pipeline-go v0.2.3
 	github.com/Azure/azure-sdk-for-go v48.2.0+incompatible // indirect
 	github.com/Azure/azure-storage-blob-go v0.11.0
 	github.com/Azure/go-autorest/autorest v0.11.12 // indirect

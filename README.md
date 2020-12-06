@@ -73,6 +73,18 @@ setx AZURE_STORAGE_ACCESS_KEY "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuF
 
 ---
 
+
+## go run cmd/azuresdk_blobdownload.go
+
+Download the files from Azure Storage Blob.
+
+args:  
+* --container ... Azure Storage Container name.
+* --file ... Azure Storage Container Blob file name. 
+
+usage: go run cmd/azuresdk_blobdownload.go --help  
+
+
 ## Thanks.
 
 * [無料の写真素材 - 無料画像・フリー素材のpro.foto（プロ・フォト）](https://pro-foto.jp/)
