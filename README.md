@@ -84,6 +84,19 @@ args:
 
 usage: go run cmd/azuresdk_blobdownload.go --help  
 
+---
+
+## go run cmd/azuresdk_and_halfsize.go
+
+Download the JPG file from the Azure Storage Blob and upload it with half the resolution.
+
+args:  
+* --container ... Azure Storage Container name.
+* --downloadFile ... Azure Storage Container Blob download file name. 
+* --uploadFile ... Azure Storage Container Blob upload file name. 
+
+usage: go run cmd/azuresdk_and_halfsize.go --help  
+
 
 ## Thanks.
 
